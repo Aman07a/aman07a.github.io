@@ -4,17 +4,18 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - CV</title>
-    <link
-      rel="stylesheet"
-      href="./src/css/site.css"
-      asp-append-version="true"
-    />
+    <link rel="stylesheet" href="./src/css/site.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <style>
+      ion-icon {
+        pointer-events: none;
+      }
+    </style>
   </head>
 
   <body>
@@ -23,13 +24,7 @@
         class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow"
       >
         <div class="container">
-          <a
-            class="navbar-brand"
-            asp-area=""
-            asp-controller="Home"
-            asp-action="Index"
-            >CV</a
-          >
+          <a class="navbar-brand" href="./index.html">CV</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -49,30 +44,30 @@
                 <a class="nav-link text-dark" href="./index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" href="introduction">
+                <a class="nav-link text-dark" href="./src/introduction">
                   Introductie
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" href="Hobbies">Hobby's</a>
+                <a class="nav-link text-dark" href="./src/hobbies">Hobby's</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" href="Motivation">Motivatie</a>
+                <a class="nav-link text-dark" href="./src/motivation">Motivatie</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" href="Educations">Opleidingen</a>
+                <a class="nav-link text-dark" href="./src/educations">Opleidingen</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" href="Courses">Cursussen</a>
+                <a class="nav-link text-dark" href="./src/courses">Cursussen</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" href="Skills">Vaardigheden</a>
+                <a class="nav-link text-dark" href="./src/skills">Vaardigheden</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" href="Work">Werk</a>
+                <a class="nav-link text-dark" href="./src/work">Werk</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" href="Internship">Stage</a>
+                <a class="nav-link text-dark" href="./src/internship">Stage</a>
               </li>
             </ul>
           </div>
@@ -90,44 +85,67 @@
                 <ion-icon name="add-sharp"></ion-icon>
               </div>
               <li style="--i: 0">
-                <a asp-area="" asp-controller="Home" asp-action="Index">
-                  <ion-icon name="home-sharp" alt="Home"></ion-icon>
-                </a>
+                <span style="font-size: x-medium">
+                  <a href="./index.html" title="Home">
+                    <ion-icon name="home-sharp"></ion-icon>
+                  </a>
+                </span>
               </li>
               <li style="--i: 1">
-                <a asp-area="" asp-controller="Home" asp-action="Introduction">
-                  <ion-icon name="person-sharp" alt="Home"></ion-icon>
-                </a>
+                <span style="font-size: x-medium">
+                  <a href="./src/introduction" title="Introductie">
+                    <ion-icon name="person-sharp"></ion-icon>
+                  </a>
+                </span>
               </li>
               <li style="--i: 2">
-                <a asp-area="" asp-controller="Home" asp-action="Hobbies">
-                  <ion-icon name="accessibility-sharp" alt="Hobby's"></ion-icon>
-                </a>
+                <span style="font-size: x-medium">
+                  <a href="./src/hobbies" title="Hobby's">
+                    <ion-icon name="accessibility-sharp"></ion-icon>
+                  </a>
+                </span>
               </li>
               <li style="--i: 3">
-                <a asp-area="" asp-controller="Home" asp-action="Motivation">
-                  <ion-icon name="rocket-sharp" alt="Motivatie"></ion-icon>
-                </a>
+                <span style="font-size: x-medium">
+                  <a href="./src/motivation" title="Motivatie">
+                    <ion-icon name="rocket-sharp"></ion-icon>
+                  </a>
+                </span>
               </li>
               <li style="--i: 4">
-                <a asp-area="" asp-controller="Home" asp-action="Educations">
-                  <ion-icon name="school-sharp" alt="Opleidingen"></ion-icon>
-                </a>
+                <span style="font-size: x-medium">
+                  <a href="./src/educations" title="Opleidingen">
+                    <ion-icon name="school-sharp"></ion-icon>
+                  </a>
+                </span>
               </li>
               <li style="--i: 5">
-                <a asp-area="" asp-controller="Home" asp-action="Skills">
-                  <ion-icon name="star-sharp" alt="Vaardigheden"></ion-icon>
-                </a>
+                <span style="font-size: x-medium">
+                  <a href="./src/courses" title="Cursussen">
+                    <ion-icon name="ribbon-sharp"></ion-icon>
+                  </a>
+                </span>
               </li>
               <li style="--i: 6">
-                <a asp-area="" asp-controller="Home" asp-action="Work">
-                  <ion-icon name="briefcase-sharp" alt="Werk"></ion-icon>
-                </a>
+                <span style="font-size: x-medium">
+                  <a href="./src/skills" title="Vaardigheden">
+                    <ion-icon name="star-sharp"></ion-icon>
+                  </a>
+                </span>
               </li>
               <li style="--i: 7">
-                <a asp-area="" asp-controller="Home" asp-action="Internship">
-                  <ion-icon name="business-sharp" alt="Stage"></ion-icon>
-                </a>
+                <span style="font-size: x-medium">
+                  <a href="./src/work" title="Werk">
+                    <ion-icon name="briefcase-sharp"></ion-icon>
+                  </a>
+                </span>
+              </li>
+              <li style="--i: 8">
+                <span style="font-size: x-medium">
+                  <a href="./src/internship" title="Stage">
+                    <ion-icon name="business-sharp"></ion-icon>
+                  </a>
+                </span>
               </li>
             </div>
           </div>
