@@ -1,0 +1,144 @@
+﻿html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  overflow-y: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  min-height: calc(92vh - 60px);
+  background-image: linear-gradient(
+    to right,
+    #002755,
+    #0a3c6d,
+    #155186,
+    #1f68a0,
+    #2980b9
+  );
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+main {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 82vh;
+  min-height: 100%;
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+  color: #000;
+}
+
+@media (max-width: 1000px) {
+  .add-margin {
+    margin-bottom: 10px;
+  }
+
+  .minus-margin {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .add-margin {
+    margin-bottom: 30px;
+  }
+
+  .minus-margin {
+    margin-bottom: -50px;
+  }
+}
+
+.hobby-container {
+  min-height: calc(92vh - 60px);
+  position: relative;
+  overflow: hidden;
+}
+
+.hobby {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  width: 90vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.hobby-img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  z-index: -2;
+}
+
+.hobby-overlay {
+  position: absolute;
+  font-size: 1.5em;
+  color: #fff;
+  margin-top: -12.4em;
+  font-weight: 500;
+  z-index: 1;
+}
+
+.family {
+  margin-left: 2em;
+}
+
+.food {
+  margin-left: 1.5em;
+}
+
+.vacation {
+  margin-left: 4em;
+}
+
+.programming {
+  margin-left: 4em;
+}
+
+.sporting {
+  margin-left: 4.5em;
+}
+
+.anime {
+  margin-left: 4.5em;
+}
+
+.music {
+  margin-left: 4.5em;
+}
+
+.photo {
+  margin-left: 4em;
+}
+
+.min-height {
+  min-height: 100px;
+}
