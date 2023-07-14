@@ -73,14 +73,14 @@ a {
 }
 
 .hobby-container {
-  min-height: calc(92vh - 60px);
+  height: 82vh;
+  /* min-height: calc(82vh - 60px); */
   position: relative;
   overflow: hidden;
 }
 
 .hobby {
   position: relative;
-  justify-content: center;
   align-items: center;
   margin-top: 10px;
   width: 90vw;
@@ -88,11 +88,24 @@ a {
   grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
   column-gap: 10px;
   row-gap: 10px;
+  margin-left: 1rem;
+}
+
+.object-fill img {
+  object-fit: fill;
+  object-position: center;
+  z-index: -2;
+}
+
+.hobby-item {
+  overflow: hidden;
+  width: 300px;
+  height: 290px;
 }
 
 .hobby-img {
-  width: 300px;
-  height: 300px;
+  height: 100%;
+  width: 100%;
   object-fit: cover;
   object-position: center;
   z-index: -2;
