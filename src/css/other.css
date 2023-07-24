@@ -155,3 +155,25 @@ a {
 .min-height {
   min-height: 100px;
 }
+
+.internship-title {
+  margin-top: 2rem !important;
+}
+
+.main-row {
+  width: 120rem !important;
+  height: 80vh;
+  /* overflow: hidden; */
+}
+
+.sub-row {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 20px;
+  width: 100vw;
+  height: 50vh;
+}
+
+.low-row {
+  border: 1px solid black;
+}
